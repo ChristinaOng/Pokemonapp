@@ -1,0 +1,116 @@
+body {background-color: linen;
+       background-image: url("cool.jpeg");
+}
+
+h1#Comparer, p#bulbalink {
+	text-align: center;
+}
+
+
+div#Partysect {
+	background-color: none;
+	text-align: center;
+	margin:100px;
+    padding: 20px;
+    border: 1px solid;
+    border-color: clear clear red clear;
+}
+
+
+
+p#YourParty {
+	color: white;
+	font-size: 50px;
+	background-color: #2e2e1f;
+	background-size: 10px 10px;
+    padding: 5px;
+    margin-top: 0px;
+    border: 5px outset;
+    border-color: #2e2e1f;
+}
+
+span#woohoo {
+	font-size:35px;
+}
+
+table#Party, td#Party {
+	background-color: red;
+	opacity: 0.9;
+	color: white;
+	border: none;
+	padding: 5px 20px;
+	margin: 20px;
+	border-radius: 25px;
+}
+
+
+ul#Party2 li {
+	text-indent: 20px;
+}
+
+
+
+button #RandomOpponent {
+	border-radius: 15px;
+	border: outset;
+	border-color: lightblue;
+	color: white;
+	background-color: blue;
+	text-decoration: none;
+	padding: 10px;
+	font: Arial;
+
+}
+
+a.button:hover {
+	color:black;
+	background-color:white;
+}
+
+div.Pokemon {
+	width: 300px; 
+	height: 600px;
+	padding: 10px 50px;
+}
+
+img.sprite {width: 100px;
+            height:100px;
+            border:0;
+}
+
+p#HP, p#Type1, p#Type2 {
+	color: blue;
+}
+
+
+ table, th, td {
+    	border: 1px solid black;
+    	padding: 10px
+    	border-collapse: collapse;  /*WHAT'S HAPPENING HERE*/
+    } 
+
+th {
+	font-family: Arial;
+	color: white;
+}
+
+td {
+	text-align: left;
+}
+
+table {
+	width: 50%
+	border-collapse: collapse;
+}
+
+
+table.moves {
+	background-color: #0000cc;
+}
+
+p#mytips {
+	font-family: "Comic Sans MS";
+	border: 1px solid black;
+	margin: 50px;
+}
+

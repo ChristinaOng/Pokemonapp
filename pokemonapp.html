@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html lang:"en-US">
+<!-- note header is the thing that showed up in the tab -->
+<head> <title> Pokemon Tester </title>    
+    <link rel= "stylesheet" href= "supportfile.css">
+    <script src="jquery-1.12.0.min.js"></script><script src="jquery-1.12.0.min.js"></script>
+  
+    </head>
+
+
+<body>
+
+<h1 id="Comparer"> Your Pokemon Comparer Thing</h1>
+
+
+<p id="bulbalink"> <a href="http://bulbapedia.bulbagarden.net/wiki/Main_Page"> This links to bulbapedia </a></p>
+
+
+<div id="Partysect">
+<p id="YourParty"> <img src = "party.jpeg" style ="width:25px;
+	                                length:25px;">
+	Your Party <span id="woohoo">(Woohoo!)</span>  
+		<img src = "party.jpeg" style ="width:25px; 
+	                                length:25px;"> 
+	</p>
+
+	<!-- LOOK AT CSS TO SEE HOW IT MOVES -->
+<center><table id= "Party">
+	<td id= "Party"> <a href = "#Pokemon1"> Pokemon 1 </a> </td>
+	<td id= "Party"><a href = "#Pokemon2"> Pokemon 2 </a> </td>
+	<td id= "Party"> <a href = "#Pokemon3"> Pokemon 3 </a> </td>
+
+	<tr>
+	<td id= "Party"> <a href = "#Pokemon4"> Pokemon 4 </a> </td>
+	<td id= "Party"> <a href = "#Pokemon5"> Pokemon 5 </a> </td>
+	<td id= "Party"> <a href = "#Pokemon6"> Pokemon 6 </a> </td>
+    </tr>
+    </table> </center>
+
+
+<!-- action="demo_form.asp" -->
+<form id = "myForm"  onsubmit="return submitForm()" method="post">
+    Name: <input type="radio" name="Pokemon" value="1"> 1
+    <input type="radio" name="Pokemon" value="2"> 2
+    <input type="radio" name="Pokemon" value="3"> 3
+    <br>
+   <pre>           <input type="radio" name="Pokemon" value="4"> 4 <input type="radio" name="Pokemon" value="5"> 5 <input type="radio" name="Pokemon" value="6"> 6</pre>
+
+<br> 
+ <center> Pokemon:<input type="text" name="pokemonName" id="pokemonName">
+  <br>
+
+  Pokemon Description: <textarea id = "description" name="description" rows="5" cols="30" minlength="50" maxlength="200"></textarea>
+  <p id="change"> </p>
+  <br>
+
+ <!-- WHY DOESN'T THIS CATCH THE MIN AND MAX? -->
+HP: <input type="number" id ="HP" min="1" max = "714">
+<br> 
+  Type1: <select name="type1">
+              <option value="rock"> Rock </option>
+              <option value="water"> Water </option>
+              <option value="electric"> Electric </option>
+              <option value="ghost"> Ghost </option>
+              <option value="grass"> Grass </option>
+              <option value="poison"> Poison </option>
+              <option value="psychic"> Psychic </option>
+              <option value="fire"> Fire </option>
+              <option value="ground"> Ground </option>
+              <option value="bug"> Bug </option>
+              <option value="dragon"> Dragon </option>
+              <option value="fighting"> Fighting </option>
+              <option value="normal"> Normal </option>
+              <option value="flying"> Flying </option>
+              <option value="ice"> Ice </option> 
+        </select>
+
+
+  Type2: <select name="type2">
+              <option value="none"> None </option>
+              <option value="rock"> Rock </option>
+              <option value="water"> Water </option>
+              <option value="electric"> Electric </option>
+              <option value="ghost"> Ghost </option>
+              <option value="grass"> Grass </option>
+              <option value="poison"> Poison </option>
+              <option value="psychic"> Psychic </option>
+              <option value="fire"> Fire </option>
+              <option value="ground"> Ground </option>
+              <option value="bug"> Bug </option>
+              <option value="dragon"> Dragon </option>
+              <option value="fighting"> Fighting </option>
+              <option value="normal"> Normal </option>
+              <option value="flying"> Flying </option>
+              <option value="ice"> Ice </option> 
+        </select>
+  <br>
+  Moves (please seperate by commas): <input type="text" name="moves">
+  <br> 
+  Move Type (please seperate by commas): <input type="text" name="moveTypes">
+  <br> <br>
+
+  <!-- can you say onclick="..." OR onsubmit="..."-->
+  <input type="button" onclick="clearForm()" value = "Reset">
+  <input type="button" onclick="getName(); submitForm(); goodHP()" value="clickme"> 
+
+</center>
+</form>
+
+    <br></br>
+  
+<button id="Random Opponent" type="button" onclick="alert('Your Opponent Pokemon is:')"> ~Random Opponent!~ </button> 
+
+    </div>
+
+
+
+
+<center><table>
+
+<p id="example"></p>
+
+<!-- ###HERE IS POKEMON 1### -->
+
+<td>
+<div class = "Pokemon" 
+<p id = "pokemonName" name="pokemonName1"><center> <b> Pokemon Number 1 Name</b> </center> </p> 
+<center><a href ="http://bulbapedia.bulbagarden.net/wiki/Main_Page"> 
+	<img class = "sprite" src="Pikachu.jpg"></img>
+	    </a></center>
+<a href="#Description"> Jump to Description </a>
+<br></br>
+
+
+<p id="Description" name="Description1"> <b> Pokemon Description: </b>  This is a Pikachu. <br> It is 
+	     <b style= color:yellow;> yellow </b> and has a <b>cute</b> face! <br> New Paragraph is indicated w a 'br' tag. <p>
+
+    <p id="HP" name="HP1"> <b> HP: </b> a number<p>
+    <p id ="Type1" name ="1Type1"> <b> Type 1: </b> a type<p>
+    <p id="Type2" name="1Type2"> <b> Type 2: </b> another type<p>
+
+<br> </br>
+<table class ="moves">
+    <tr class="moves"> 
+	    <th class="moves"> Move</th>
+	    <th class="moves"> Type </th>
+	</tr>
+	<tr class="moves">
+		<td class="moves"> Tackle</td>
+		<td class="moves"> Normal </td>
+    </tr>
+    <tr class="moves">
+    	<td class="moves"> Tail Whip </td>
+    	<td class="moves"> Normal </td>
+    </tr>
+
+	</table>
+</div>
+</td>
+
+
+
+
+<!-- ###HERE IS POKEMON 2### -->
+<td>
+<div id = "pokemonName" name="name2" class = "Pokemon">
+<p> <center><b> Pokemon Number 2 Name</b></center></p> 
+<center><a href ="http://bulbapedia.bulbagarden.net/wiki/Main_Page"> 
+	<img class="sprite" src="squirtle.png"></img>
+	    </a></center>
+<a href="#Description2"> Jump to Description </a>
+<br></br>
+
+
+<p id="Description" name="Description2"> <b> Pokemon Description: </b>  This is another pokemon. <br> It is 
+	     <b style= color:blue;> blue </b> and has a <b>round</b> face! <br> New Paragraph is indicated w a 'br' tag. <p>
+
+    <p id="HP" name="HP2"> <b> HP: </b> a number<p>
+    <p id ="Type1" name="2Type1"> <b> Type 1: </b> a type<p>
+    <p id="Type2" name="2Type2"> <b> Type 2: </b> another type<p>
+
+
+<br> </br>
+<table class ="moves">
+    <tr class="moves"> 
+      <th class="moves"> Move</th>
+      <th class="moves"> Type </th>
+  </tr>
+  <tr class="moves">
+    <td class="moves"> Tackle</td>
+    <td class="moves"> Normal </td>
+    </tr>
+    <tr class="moves">
+      <td class="moves"> Tail Whip </td>
+      <td class="moves"> Normal </td>
+    </tr>
+
+  </table>
+</td>
+</div>
+
+
+<!-- ###HERE IS POKEMON 3### -->
+<td>
+<div id = "pokemonName" name = "name3" class = "Pokemon">
+<p> <center><b> Pokemon Number 3 Name </b></center></p> 
+<center><a href ="http://bulbapedia.bulbagarden.net/wiki/Main_Page"> 
+	<img class="sprite" src="dragonair.png"></img>
+	    </a></center>
+<a href="#Description3"> Jump to Description </a>
+<br></br>
+
+
+<p id="Description" name = "Description3"> <b> Pokemon Description: </b>  This is another pokemon. <br> It is 
+	     <b style= color:lightblue;> light blue </b> and shaped like a long magical poop! <br> New Paragraph is indicated w a 'br' tag. <p>
+
+    <p id="HP" name ="HP3"> <b> HP: </b> a number<p>
+    <p id ="Type1" name = "3Type1"> <b> Type 1: </b> a type<p>
+    <p id="Type2" name = "3Type2"> <b> Type 2: </b> another type<p>
+
+
+<br> </br>
+<table class ="moves">
+    <tr class="moves"> 
+      <th class="moves"> Move</th>
+      <th class="moves"> Type </th>
+  </tr>
+  <tr class="moves">
+    <td class="moves"> Tackle</td>
+    <td class="moves"> Normal </td>
+    </tr>
+    <tr class="moves">
+      <td class="moves"> Tail Whip </td>
+      <td class="moves"> Normal </td>
+    </tr>
+
+  </table>
+</td>
+</div>
+
+
+<tr>
+<!-- ###HERE IS POKEMON 4### -->
+<td>
+<div id = "pokemonName" name = "name4" class = "Pokemon">
+<p> <center><b> Pokemon Number 4 Name </b></center></p> 
+<center><a href ="http://bulbapedia.bulbagarden.net/wiki/Main_Page"> 
+	<img class="sprite" src="dragonair.png"></img>
+	    </a></center>
+<a href="#Description4"> Jump to Description </a>
+<br></br>
+
+
+<p id="Description" name ="Description4"> <b> Pokemon Description: </b>  This is another pokemon. <br> It is 
+	     <b style= color:lightblue;> light blue </b> and shaped like a long magical poop! <br> New Paragraph is indicated w a 'br' tag. <p>
+
+    <p id="HP" name="HP4"> <b> HP: </b> a number<p>
+    <p id ="Type1" name ="4Type1"> <b> Type 1: </b> a type<p>
+    <p id="Type2" name = "4Type2"> <b> Type 2: </b> another type<p>
+
+
+<br> </br>
+<table class ="moves">
+    <tr class="moves"> 
+      <th class="moves"> Move</th>
+      <th class="moves"> Type </th>
+  </tr>
+  <tr class="moves">
+    <td class="moves"> Tackle</td>
+    <td class="moves"> Normal </td>
+    </tr>
+    <tr class="moves">
+      <td class="moves"> Tail Whip </td>
+      <td class="moves"> Normal </td>
+    </tr>
+
+  </table>
+</td>
+</div>
+
+
+
+
+<!-- ###HERE IS POKEMON 5### -->
+
+<td>
+<div id = "pokemonName" name = "name5" class = "Pokemon">
+<p> <center><b> Pokemon Number 5 Name </b></center></p> 
+<center><a href ="http://bulbapedia.bulbagarden.net/wiki/Main_Page"> 
+  <img class="sprite" src="dragonair.png"></img>
+      </a></center>
+<a href="#Description5"> Jump to Description </a>
+<br></br>
+
+
+<p id="Description" name ="Description5"> <b> Pokemon Description: </b>  This is another pokemon. <br> It is 
+       <b style= color:lightblue;> light blue </b> and shaped like a long magical poop! <br> New Paragraph is indicated w a 'br' tag. <p>
+
+    <p id="HP" name="HP5"> <b> HP: </b> a number<p>
+    <p id ="Type1" name ="5Type1"> <b> Type 1: </b> a type<p>
+    <p id="Type2" name = "54Type2"> <b> Type 2: </b> another type<p>
+
+
+<br> </br>
+<table class ="moves">
+    <tr class="moves"> 
+      <th class="moves"> Move</th>
+      <th class="moves"> Type </th>
+  </tr>
+  <tr class="moves">
+    <td class="moves"> Tackle</td>
+    <td class="moves"> Normal </td>
+    </tr>
+    <tr class="moves">
+      <td class="moves"> Tail Whip </td>
+      <td class="moves"> Normal </td>
+    </tr>
+
+</table>
+</td>
+
+</div>
+
+
+
+<!-- ###HERE IS POKEMON 6### -->
+
+<td>
+<div id = "pokemonName" name = "name6" class = "Pokemon">
+<p> <center><b> Pokemon Number 6 Name </b></center></p> 
+<center><a href ="http://bulbapedia.bulbagarden.net/wiki/Main_Page"> 
+  <img class="sprite" src="dragonair.png"></img>
+      </a></center>
+<a href="#Description6"> Jump to Description </a>
+<br></br>
+
+
+<p id="Description" name ="Description6"> <b> Pokemon Description: </b>  This is another pokemon. <br> It is 
+       <b style= color:lightblue;> light blue </b> and shaped like a long magical poop! <br> New Paragraph is indicated w a 'br' tag. <p>
+
+    <p id="HP" name="HP6"> <b> HP: </b> a number<p>
+    <p id ="Type1" name ="6Type1"> <b> Type 1: </b> a type<p>
+    <p id="Type2" name = "6Type2"> <b> Type 2: </b> another type<p>
+
+
+<br> </br>
+<table class ="moves">
+    <tr class="moves"> 
+      <th class="moves"> Move</th>
+      <th class="moves"> Type </th>
+  </tr>
+  <tr class="moves">
+    <td class="moves"> Tackle</td>
+    <td class="moves"> Normal </td>
+    </tr>
+    <tr class="moves">
+      <td class="moves"> Tail Whip </td>
+      <td class="moves"> Normal </td>
+    </tr>
+
+  </table>dd
+</td>
+</tr>
+</div>
+
+
+</table></center>
+
+</table></center>
+
+
+<!-- <pre> puts the text EXACTLY as it's seen -->
+<p id ="mytips"> This is how I want my paragraph to look. (with lotttttts of       spaces) 
+I will put tips here and other things. Just like Professor Oak saying <q> Are you a boy or a girl? </q>
+
+This format is cool. </p>
+
+
+
+
+    </body>
+
+
+<script src="myScript.js">
+
+ </script>
+
+</html>
